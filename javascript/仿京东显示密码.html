@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="仿京东显示密码.css" type="text/css">
+</head>
+<body>
+    <div class="title">
+        <h3>京东登录</h3>
+    </div>
+    <div class="inp">
+        <div class="name">
+            <label for=""></label>
+            <input type="text" id="name">
+        </div>
+        <div class="password">
+            <label for=""></label>
+            <input type="password" id="pass">
+            <img src="D:\VS\JavaScript\u=1499771356,2828369699&fm=26&fmt=auto&gp=0.webp" alt="" class="eyes">
+            <a href="#">| 忘记密码</a>
+        </div>
+    </div>
+    <div>
+        <input class="btn" type="button" value="登录" url="#">
+    </div>
+    <div class="pid">
+        <a href="#">短信验证码登录</a>
+    </div>
+    <div class="zc">
+        <a href="#">手机快速注册</a>
+    </div>
+    <div class="qq">
+        <hr id="hr1">
+        <hr id="hr2">
+        <p id="dl">其他登陆方式</p>
+        <div id="img">
+            <img src="D:\VS\JavaScript\Snipaste_2021-05-20_11-06-07.jpg">
+            <label for=""></label>
+        </div>
+        <p id="a">QQ</p>
+        <p id="b">登录即代表您已同意<a href="#">京东隐私政策</a></p>
+    </div>
+    <script>
+        var a = document.querySelector (".eyes");
+        var b = document.getElementById ("pass");
+        var flag = 0;
+        a.onclick = function () {
+            if (flag == 0) {
+                b.type = "text";
+                a.src = "D:\\VS\\JavaScript\\u=2424015692,3743115235&fm=26&fmt=auto&gp=0.webp";
+                flag = 1;
+                console.log (flag);
+            } else {
+                b.type = "password";
+                a.src = "D:\\VS\\JavaScript\\u=1499771356,2828369699&fm=26&fmt=auto&gp=0.webp";
+                flag = 0;
+            }
+        }
+        var c = document.querySelector (".btn");
+        c.onclick = function () {
+            window.location.href = "https://www.baidu.com";
+        }
+    </script>
+</body>
+</html>

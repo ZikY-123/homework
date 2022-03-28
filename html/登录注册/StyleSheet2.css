@@ -1,0 +1,55 @@
+﻿#head {
+    font-size: 25px;
+}
+
+.size {
+    font-size: 15px;
+}
+
+.color {
+    color: red;
+}
+
+.name {
+    width: 200px;
+    background:url(images/name.png) no-repeat;
+    text-indent:1em;
+}
+
+.phone {
+    width: 200px;
+    background:url(images/phone.png) no-repeat;
+    text-indent:1em;
+}
+
+.comments {
+    width: 380px;
+    height:200px;
+}
+.comments::-webkit-input-placeholder {
+    position:relative;
+    bottom:88px;
+}
+.main {
+    border:1px solid;
+    width:730px;
+    height:620px;
+    position:relative;
+    left:420px;
+    top:100px;
+    padding:0px 0px 0px 30px;
+}
+.present {
+    position:relative;
+    left:40px;
+}
+.email {
+    background:url(images/email.png) no-repeat;
+    text-indent:1em;
+}
+#name {
+    position:relative;
+    top:50px;
+    float:left;
+    margin-right:10px;
+}

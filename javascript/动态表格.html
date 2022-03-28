@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            border: 1px black solid;
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            background-color: #cfcad0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            text-align: center;
+        }
+        td {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>省份</th>
+                <th>批次</th>
+                <th>类别</th>
+                <th>专业名称</th>
+                <th>最低分</th>
+                <th>最高分</th>
+                <th>平均分</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        let datas = [
+            {
+                name : "甘肃",
+                subject : "本科",
+                score : "文科",
+                aaa : "金融学",
+                bbb : 510,
+                ccc : 514,
+                ddd : 512
+            } , {
+                name : "甘肃",
+                subject : "本科",
+                score : "文科",
+                aaa : "金融学",
+                bbb : 510,
+                ccc : 514,
+                ddd : 512
+            } ,
+        ];
+        for (let i = 0 ; i < datas.length ; i ++) {
+            tbody = document.querySelector ("tbody");
+            tr = document.createElement ("tr");
+            tbody.appendChild (tr);
+            for (let k in datas[i]) {
+                let td = document.createElement ("td");
+                tr.appendChild (td);
+                td.innerHTML = datas[i][k];
+            }
+            let td = document.createElement ("td");
+            td.innerHTML = "<a href = 'javascript:;'>删除</a>";
+            tr.appendChild (td);
+        }
+        let as = document.querySelectorAll ("a");
+        for (let i = 0 ; i < as.length ; i ++) {
+            as[i].onclick = function () {
+                tbody.removeChild (this.parentNode.parentNode);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "div"></div>
+    <img src="D:\桌面\平面设计实例素材\1.4.2b.jpg" alt="" class="img">
+    <script>
+        // 分时问候案例
+        // 获取元素
+        var div = document.getElementById ("div");
+        var img = document.querySelector(".img");
+        // 得到当前小时数
+        var time = new Date ();
+        // 判断小时数改变图片文字信息
+            if (time.getHours < 12) {
+                div.innerHTML = "上午好";
+                img.src = "D:\\桌面\\平面设计实例素材\\1.4.8.jpg";
+            } else if (time.getHours < 18) {
+                div.innerHTML = "下午好";
+                img.src = "D:\\桌面\\平面设计实例素材\\1.6.2.jpg";
+            } else {
+                div.innerHTML = "晚上好";
+                img.src = "D:\\桌面\\平面设计实例素材\\1.6.3.jpg";
+            }
+    </script>
+</body>
+</html>

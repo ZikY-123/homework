@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lunbo</title>
+    <style>
+        div {
+            height: 470px;
+            width: 590px;
+            position:relative;
+            margin: 0 auto;
+        }
+        .one {
+            width: 590px;
+            height: 40px;
+            top: 50%;
+            margin-top: -20px;
+            position: absolute;
+           
+        }
+         span {
+             width: 30px;
+             height: 40px;
+             background-color: rgba(0, 0, 0, 0.3);
+             display: inline-block;
+             text-align: center;
+             line-height: 40px;
+             cursor: pointer;
+         }
+         .one .left {
+             float: left;
+             border-radius: 0;
+         }
+         .one .right {
+             float: right;
+             border-radius: 0;
+         }
+         .box ul {
+             width: 114px;
+             height: 12px;
+             background-color: rgb(57, 26, 231); 
+             position: absolute;
+             left: 30px;
+             bottom: 30px;
+             list-style: none;
+         }
+         .box ul li {
+             float: left;
+             width: 10px;
+             height: 10px;
+             background-color: #fff;
+             margin: 0 2px;
+             border-radius: 50%;
+             cursor: pointer;
+         }
+     .box ul li:hover {
+         background-color: cyan ;
+     }
+    .one span:hover{
+        background-color: black;
+    }
+    
+ 
+     </style>
+ </head>
+ <body>
+     <div class="box">
+         <img src="./banner.jpg" alt="">
+         <div class="one">
+             <span class="left"><</span>
+             <span class="right">></span>
+         </div>
+         <ul class="a">
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+     </div>
+ </body>
+ </html>

@@ -1,0 +1,21 @@
+﻿h1 {
+    color:blue;
+    text-align:center;
+}
+h4 {
+    color:darkgrey;
+    text-align:center;
+}
+.blue {
+    color:cornflowerblue;
+}
+#red {
+    color:red;
+}
+#first {
+    font-family:LiSu;
+    text-indent:2em;
+}
+p {
+    text-indent:2em;
+}

@@ -1,0 +1,21 @@
+﻿body {
+    background-image: url('background.jpg');
+    font-family: KaiTi;
+    font-size: 18px;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: brown;
+}
+
+p {
+    color: indigo;
+}
+
+br {
+    color: dimgray;
+}

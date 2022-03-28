@@ -1,0 +1,30 @@
+body {
+    background-color: teal;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+.dh {
+    text-align: center;
+}
+a {
+    color: thistle;
+   text-decoration: none;
+}
+.hdyy {
+    background-color: turquoise;
+    }
+p {
+    text-indent: 2em;
+    margin-right: 30px;}
+img {
+    float: left;
+    margin-right: 10px;
+}
+.p1 {
+    color: yellow;
+     text-decoration:underline;
+     font-style: italic;
+     font-family: 宋体;
+}

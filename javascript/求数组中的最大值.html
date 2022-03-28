@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //求数组的最大值
+        var a = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10];
+        var b = a[0];
+        //for (var i = 0 ; i < a.length ; i ++) {
+            //if (a[i] > b) {
+                //b = a[i];
+            //}
+        //}
+        //console.log(b);
+        //最小值
+        for (var i = 0 ; i < a.length ; i ++) {
+            if (a[i] < b) {
+                b = a[i];
+            }
+        }
+        console.log(b);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

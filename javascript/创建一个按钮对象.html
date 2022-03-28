@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 创建一个按钮对象，该对象中包含宽、高、背景颜色和点击行为
+        var but = new Object ();
+        but.wide = 10;
+        but.tall = 20;
+        but.backGroundColor = "blue";
+        but.act = function () {
+            console.log ("点击");
+        }
+        for (var k in but) {
+            console.log(k + ":" + but [k]);
+        }
+        console.log (but.wide);
+        console.log (but.tall);
+        but.act ();
+        console.log (typeof but);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

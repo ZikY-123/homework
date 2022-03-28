@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>登录</title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="login_bar">
+        <form action="#" method="dialog">
+            账号：
+            <input type="text" class="admin" placeholder="请输入账号"  pattern="^[a-zA-z] [a-zA-Z0-9_] {4,15} $"/> <br /> <br />
+            密码：
+            <input type="password" class="code" placeholder="请输入密码" pattern="^[a-zA-z]\w{5,17} $"/> <br /> <br />
+    <!--
+     <script>
+        function jump() {
+        window.location.href = "#";
+        }//该script脚本块表示一个函数跳转,可使用input中的onclink属性代替
+    </script>
+    -->
+            <input type="button" value="登录" class="login" ><!--添加一个名为“登录”的普通按钮-->
+    <!--
+    <script>
+        function jump() {
+        window.location.href = "HTMLPage2.html";
+        }//该script脚本块表示一个函数跳转,可使用input中的onclink属性代替
+    </script>
+    -->
+            <input type="button" value="注册" class="regisiter" onclick="window.open('HTMLPage2.html')"><!--添加一个名为“注册”的普通按钮-->
+        </form>
+    </div>
+</body>
+</html>

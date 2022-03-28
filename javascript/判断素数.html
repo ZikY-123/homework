@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 用户输入一个数判断一个数是否是素数，并返回素数的值
+        var a = prompt("请输入要判断的数");
+        var b;
+        function judge () {
+            if (a > 1) {
+                for (var i = 2 ; i < a ; i ++) {
+                    b = a % i;
+                    if (b = 0) {
+                        return a + "不是素数";
+                    } else {
+                        return a + "是素数";
+                    }
+                }
+            }  else {
+                return a + "不是素数";
+            }
+        }
+        alert(judge(a));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

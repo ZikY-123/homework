@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>轮播特效</title>
+
+		<style type="text/css">
+
+			*{
+
+				margin: 0;
+
+				padding: 0;
+
+				list-style: none;
+
+			}
+
+			#lunbo{
+
+				width: 400px;
+
+				height: 400px;
+
+				margin: 0 auto;
+
+				position: relative;
+
+				overflow: hidden;
+
+				background-color: #CCC;
+
+			}
+
+			#lunbo ul{
+
+				position: absolute;
+
+				top: 0;
+
+				left: 0;
+
+				width: 100%;
+
+				height: 100%;
+
+			}
+
+			#lunbo ul li{
+
+				width: 100%;
+
+				height: 100%;
+
+				display: none;
+
+			}
+
+			#lunbo ul li.active{
+
+				display: block;
+
+			}
+
+			#lunbo ul li a{
+
+				width: 100%;
+
+				height: 100%;
+
+			}
+
+			#lunbo ul li a img{
+
+				width: 100%;
+
+				height: 100%;
+
+			}
+
+			#lunbo ol{
+
+				position: absolute;
+
+				bottom: 5%;
+
+				left: 40%;
+
+			}
+
+			#lunbo ol li{
+
+				float: left;
+
+				width: 20px;
+
+				height: 20px;
+
+				line-height: 20px;
+
+				text-align: center;
+
+				background-color: #666666;
+
+				margin-right: 2px;
+
+				color: white;
+
+				cursor: pointer;
+
+			}
+
+			#lunbo ol li.current{
+
+				background-color: #CCCCCC;
+
+				color: #000000;
+
+			}
+
+			#left{
+
+				display: block;
+
+				width: 20px;
+
+				height: 20px;
+
+				line-height: 20;
+
+				text-align: center;
+
+				background-color: #ccc;
+
+				position: absolute;
+
+				left: 0;
+
+				top: 50%;	
+
+			}
+
+			#left{
+
+				display: block;
+
+				width: 20px;
+
+				height: 20px;
+
+				line-height: 20px;
+
+				text-align: center;
+
+				background-color: #ccc;
+
+				position: absolute;
+
+				left: 0;
+
+				top: 50%;
+
+				margin-top: -10px;	
+
+			}
+
+			#right{
+
+				display: block;
+
+				width: 20px;
+
+				height: 20px;
+
+				line-height: 20px;
+
+				text-align: center;
+
+				background-color: #ccc;
+
+				position: absolute;
+
+				right: 0;
+
+				top: 50%;
+
+				margin-top: -10px;	
+
+			}
+
+		</style>
+
+	</head>
+
+	<!--
+
+		1.准备素材(图片、左右播放按钮)
+
+		2.页面结构
+
+		3.页面样式
+
+		4.页面逻辑
+
+	-->
+
+	<body>
+
+		<div id="lunbo">
+
+			<!--图片列表-->
+
+			<ul>
+
+				<li class="active"><a href="#"><img src="img/b1.jpg"/></a></li>
+
+				<li><a href="#"><img src="img/b2.jpg"/></a></li>
+
+				<li><a href="#"><img src="img/b3.jpg"/></a></li>
+
+				<li><a href="#"><img src="img/b4.jpg"/></a></li>
+
+				<li><a href="#"><img src="img/b5.jpg"/></a></li>
+
+			</ul>
+
+			<!--导航列表-->
+
+			<ol>
+
+				<li class="current">1</li>
+
+				<li>2</li>
+
+				<li>3</li>
+
+				<li>4</li>
+
+				<li>5</li>
+
+			</ol>
+
+			<span id="left">&lt;</span>
+
+		<!--	<span id="right"></span>-->
+
+			
+
+				<!--<img id="left" src="img/left.png"/>-->
+
+				<img id="right" src="img/right.png"/>
+
+			
+
+		</div>
+
+		
+
+		<script type="text/javascript">
+
+			//任务 完成轮播效果
+
+			//获取图片列表对象
+
+			var imgs = document.querySelectorAll('#lunbo ul li');
+
+			//console.log(imgs.length);
+
+			//获取导航数字对象
+
+			var num = document.querySelectorAll('#lunbo ol li');
+
+			//console.log(num.length);
+
+			var len = num.length;
+
+			//console.log(len);
+
+			for (var i=0;i<len;i++) {
+
+				//为导航列表元素添加单击事件
+
+				num[i].onclick = function(){
+
+					//切换样式
+
+					for (var j=0;j<len;j++) 
+
+					{
+
+						if(this==num[j])
+
+						{
+
+							num[j].classList.add('current');
+
+							imgs[j].classList.add('active');
+
+						}
+
+						else
+
+						{
+
+							num[j].classList.remove('current');
+
+							imgs[j].classList.remove('active');
+
+						}
+
+					}//end for
+
+				};
+
+			}
+
+			//实现自动播放
+
+			var count = 0;//计数器
+
+			var timer = null;//定时器
+
+			//定义切换方法
+
+			function dispalypic()
+
+			{
+
+				count++;
+
+				if(count==len){count=0;}
+
+				for (var i=0;i<len;i++) {
+
+					if(i==count){
+
+						num[i].classList.add('current');
+
+					    imgs[i].classList.add('active');
+
+					}
+
+					else{
+
+						num[i].classList.remove('current');
+
+						imgs[i].classList.remove('active');
+
+					}
+
+				}
+
+			}//函数结束
+
+			//执行计数器
+
+			timer = setInterval(dispalypic,3000);
+
+			//如何停止轮播
+
+			//鼠标移入图片上方，则停止播放,移出时候继续播放
+
+			var lunbo = document.getElementById('lunbo');
+
+			//为轮播对象添加鼠标移入事件
+
+			lunbo.onmouseover = function(){
+
+				//清除定时器
+
+				clearInterval(timer);
+
+			};
+
+			//鼠标移出时候启动定时器
+
+			lunbo.onmouseout = function(){
+
+				timer = setInterval(dispalypic,3000);
+
+			};
+
+		</script>
+
+		
+
+		<script type="text/javascript">
+
+			
+
+		</script>
+
+	</body>
+
+</html>
+
+
+

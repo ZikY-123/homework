@@ -1,0 +1,36 @@
+﻿h1 {text-align: center;
+    background-color:chocolate;
+}
+.dh {text-align:center;}
+#a1 {text-align:center;
+     color:coral;
+}
+#a2 {
+    text-align: center;
+    color: coral;
+}
+#a3 {
+    text-align: center;
+    color: coral;
+}
+#a4 {
+    text-align: center;
+    color: coral;
+}
+#a5 {
+    text-align: center;
+    color: coral;
+}
+/*导航栏颜色和居中*/
+img {
+    width:200px;
+     height:300px;
+}
+/*图片大小*/
+body {
+    background-color: antiquewhite;
+}
+.p1 {
+    border:2px;
+    padding: 0px;
+}

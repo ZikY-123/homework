@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = prompt("请输入成绩");
+        parseInt(a);
+        if (a != NaN && a <= 100) {
+            var b = a / 10;
+            switch (b) {
+                case 6 :
+                alert("该学生的成绩等级为D级");
+                break;
+                case 7 :
+                alert("该学生的成绩等级为C级");
+                break;
+                case 8 :
+                alert("该学生的成绩等级为B级");
+                break;
+                case 9 :
+                alert("该学生的成绩等级为A级");
+                break;
+                default :
+                alert("该学生的成绩等级为E级");
+            }
+        } else {
+            alert("请输入合法数值");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

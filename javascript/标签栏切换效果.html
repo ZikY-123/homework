@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #big_div {
+        background-color: antiquewhite;
+        width: 200px;
+        height: 30px;
+    }
+    .biaoti {
+        background-color: aquamarine;
+        width: 48px;
+        height: 30px;
+        border-collapse: collapse;
+        border: 1px black solid;
+        text-align: center;
+        padding-top: 7px;
+        float: left;
+    }
+    #ul {
+        border: 1px black solid;
+        width: 198px;
+        height: 200px;
+    }
+</style>
+<body>
+    <div id="big_div">
+        <li class="biaoti">标题1</li>
+        <li class="biaoti">标题2</li>
+        <li class="biaoti">标题3</li>
+        <li class="biaoti">标题4</li>
+    </div>
+    <div id="ul"></div>
+    <script>
+        let head = document.getElementById ("big_div");
+        let li = document.getElementById ("big_div").children;
+        let ul = document.getElementById ("ul");
+        for (let i = 0 ; i < li.length ; i ++) {
+            li[i].addEventListener ("mouseover" , function () {
+                ul.innerHTML = i + 1;
+                this.style.backgroundColor = "aqua";
+                this.addEventListener ("mouseleave" , function () {
+                    ul.innerHTML = " ";
+                    this.style.backgroundColor = "aquamarine";
+                })
+            });
+        }
+    </script>
+</body>
+</html>

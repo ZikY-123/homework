@@ -1,0 +1,67 @@
+﻿#wz {
+    float:left;
+}
+.bj {
+    margin: 100px auto;
+    width:600px;
+    height:600px;
+    border:10px solid;
+    border-color:darkgray;
+    border-radius:50%;
+    background-image:repeating-radial-gradient(circle at 50%,#333,#000 1%);
+}
+#list {
+    margin:40px auto;
+    background-color:white;
+    width:320px;
+    height:520px;
+    border-radius:27px;
+}
+.neirong {
+    position: relative;
+    left:0px;
+    top: -9px;
+    background-color:rebeccapurple;
+    border-radius:27px;
+}
+.li {
+    margin-right:5px;
+    position:relative;
+    left:10px;
+    top:5px;
+}
+.p1 {
+    position:relative;
+    top:5px;
+    left:0px;
+    font-size:20px;
+    width:280px;
+    height:40px;
+    border-bottom:solid 5px white;
+    padding-left:40px;
+    color:white;
+}
+#head {
+    position: relative;
+    left: 60px;
+    padding: 0px;
+    margin: 0px;
+    top:15px;
+}
+#wenzi {
+    position: relative;
+    left: 75px;
+    margin: 0px;
+    padding: 0px;
+    top:8px;
+}
+#p2 {
+    position: relative;
+    top: 5px;
+    left: 0px;
+    font-size: 20px;
+    width: 280px;
+    height: 40px;
+    padding-left: 40px;
+    color: white;
+}

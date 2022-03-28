@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            list-style-type: none;
+            padding: 1px;
+            margin: 1px;
+            width: 240px;
+            height: 300px;
+            border:1px black solid;
+        }
+        .banner li {
+            background-color: antiquewhite;
+            float: left;
+            margin: 2px;
+            padding: 2px;
+            border:1px black solid;
+        }
+        #font {
+            margin: 0;
+            padding: 0;
+            width: 240px;
+            height: 270px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="banner">
+        <li>列表一</li>
+        <li>列表二</li>
+        <li>列表三</li>
+        <li>列表四</li>
+    </ul>
+    <div id="font"></div>
+    <script>
+        let head = document.querySelector ("ul").children;
+        for (let i = 0 ; i < head.length ; i ++) {
+            head[i].onmouseover = function () {
+                this.backgroundColor = "aqua";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            width: 300px;
+            height: 50px;
+            line-height: 40px;
+            border-bottom: 2px dotted rgb(204, 204, 204);
+            position:relative;
+        }
+        ul li button {
+            position:absolute;
+            right: 0;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <textarea cols="30" rows="10"></textarea>
+    <input type="button" value="发布">
+    <ul></ul>
+    <script>
+        var text = document.querySelector ("textarea");
+        var btn = document.querySelector ("input");
+        var ul = document.querySelector ("ul");
+        btn.onclick = function () {
+            if (text.value.length == 0) {
+                alert ("请输入留言");
+            } else {
+                var li = document.createElement ("li");
+                li.innerHTML = text.value + "<button>删除</button>";
+                ul.insertBefore (li, ul.children[0]);
+                text.value = "";
+                var btns = document.querySelectorAll ("ul li button");
+                for (var i = 0 ; i <btns.length ; i ++) {
+                    btns[i].onclick = function () {
+                        ul.removeChild (this.parentNode);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

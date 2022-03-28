@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = prompt("请输入班级总人数");
+        var b = 0;//存储和
+        var c = 0;//存储平均值
+        for (var i = 1 ; i <= a ; i ++) {
+            var d = prompt("请输入第" + i + "个学生的成绩");
+            b = b + parseFloat(d);
+        }
+        c = b / a;
+        alert("该班学生的总成绩为：" + b);
+        alert("该班学生的平均成绩为：" + c)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

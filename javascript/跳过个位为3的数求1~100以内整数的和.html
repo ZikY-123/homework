@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 跳过个位为3的数求1~100以内整数的和
+        sum = 0;
+        for (var i = 1 ; i <= 100 ; i ++) {
+            if (i == 3  || i == 13 || i == 23 || i == 33 || i == 43 || i == 53 || i == 63 || i == 73 || i == 83 || i == 93) {
+                continue;
+            }
+            sum += i;
+        }
+        console.log(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 函数法判断闰年(闰年：能被4整除但不能被100整除，或者能被400整除)
+        var year = prompt("请输入需要判断的年份");
+        function isRunyear () {
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                return year + "是闰年";
+            } else {
+                return year + "不是闰年";
+            }
+        }
+        alert (isRunyear (year));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 函数法判断数组最大值
+        var arr = [14 , 28 , 31 , 444 , 589 , 666 , 71 ,85 , 9 , 160];
+        function getMax () {
+            var max = arr[0];
+            for (var i = 0 ; i <= arr.length ; i ++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        alert("最大值为" + getMax(arr));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

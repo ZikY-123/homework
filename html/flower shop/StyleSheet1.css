@@ -1,0 +1,90 @@
+﻿body {
+    color: darkolivegreen;
+    background-color: darkgray;
+    font-family: STFangsong;
+}
+
+.home {
+    width: 980px;
+    margin: auto;
+}
+
+.head {
+    width: 980px;
+    margin: auto;
+}
+
+ .head p {
+    text-align: center;
+ }
+
+#st {
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-size:20px;
+}
+
+#img1 {
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+.h3 {
+    font-size: 1em;
+}
+
+#img2 {
+    position: relative;
+    left: 180px;
+}
+
+#img3 {
+    position: relative;
+    left: 180px;
+    top: 20px;
+}
+
+.sj {
+    text-indent: 2em;
+    text-align: left;
+}
+
+.xhx {
+    text-decoration: underline;
+}
+.nr {
+    width:980px;
+    position:relative;
+    height:100px;
+    margin-top:30px;
+    font-size:20px;
+}
+#jc {
+    font-size:30px;
+    text-align:center;
+}
+#head {
+    font-size:20px;
+}
+#ing4 {
+    float:left;
+}
+.js p {
+    text-indent:2em;
+    font-size:20px;
+    font-family:LiSu;
+    text-align:left;
+}
+.js {
+    width:800px;
+    position:relative;
+    left:120px;
+    bottom:120px;
+}

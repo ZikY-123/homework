@@ -1,0 +1,78 @@
+﻿body {
+    font-size:16px;
+}
+.home {
+    width: 1200px;
+    margin: auto;
+}
+
+.daohang {
+    width: 160px;
+    position: absolute;
+    top: -10px;
+    left: 1200px;
+}
+
+.page1 h2 {
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+}
+
+    .page1 h2 span {
+        font-size: 50px;
+        color: orange;
+    }
+
+.page1 {
+    width: 500px;
+    height:20px;
+    position: relative;
+    bottom:500px;
+    left: 700px;
+}
+.page1 p {
+        text-indent: 2em;
+}
+
+.green {
+    color: green;
+    text-decoration: underline;
+}
+
+#orange {
+    color: orange;
+    text-decoration: underline;
+}
+
+.page2 {
+    position:relative;
+    bottom:40px;
+}
+.page2 h4 {
+    font-style: oblique;
+    color: darkgrey;
+}
+
+hr {
+    border-bottom-width:3px;
+    border-bottom-color:gray;
+}
+.page2 p {
+    text-indent:2em;
+}
+.page3 img {
+    float:left;
+} 
+.pinglun p span {
+    color:orange;
+}
+.pinglun strong {
+    color:gray;
+}
+.bottom p {
+    text-align:center;
+}
+.bottom span {
+    color:cornflowerblue;
+}

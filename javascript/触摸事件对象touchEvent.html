@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>touch</title>
+</head>
+<style>
+  #app {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+  }
+</style>
+<body>
+<div id="app"></div>
+<script>
+  app = document.querySelector('#app')
+  app.addEventListener('touchstart', function () {
+    console.log("touchstart")
+  })
+  app.addEventListener('touchmove', function () {
+    console.log("touchmove")
+  })
+  app.addEventListener('touchend', function () {
+    console.log("touchend")
+  })
+</script>
+</body>
+</html>

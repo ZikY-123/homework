@@ -1,0 +1,7 @@
+﻿div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #00fc00;
+    background-image: radial-gradient(#00fc00,#007900);
+}

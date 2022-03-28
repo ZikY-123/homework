@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="thhp">桃花湖畔</button>
+    <button id="zyjn">职业技能</button>
+    <img src="#" alt="该图片不存在">
+    <script>
+        var btn_thhp = document.getElementById ("thhp");
+        var btn_zyjn = document.getElementById ("zyjn");
+        var pic = document.querySelector ("img");
+        btn_zyjn.onclick = function () {
+            pic.src = "#";
+            pic.title = "职业技能竞赛";
+        }
+        btn_thhp.onclick = function () {
+            pic.src = "#";
+            pic.title = "后花园";
+        }
+    </script>
+</body>
+</html>

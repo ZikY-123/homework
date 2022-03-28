@@ -1,0 +1,17 @@
+﻿.red {
+    color:red;
+    text-decoration:underline;
+}
+h2 {
+    color:blue;
+    text-decoration:underline;
+}
+.wz {
+    color:forestgreen;
+}
+#td {
+    text-decoration:underline;
+}
+p strong {
+    color:red;
+}

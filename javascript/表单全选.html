@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            background-color: aqua;
+            width: 100px;
+            border: 1px black solid;
+        }
+        td {
+            text-align: center;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead id="head">
+            <th class="head"><input type="checkbox" id="pass"/>全选</th>
+            <th class="head">商品</th>
+            <th class="head">价格</th>
+        </thead>
+        <tbody id="iPhone8">
+                <td><input class="pass_All" type="checkbox"></td>
+                <td class="phone">iPhone8</td>
+                <td class="phone">8000</td>
+        </tbody>
+        <tbody id="AirPods">
+            <td><input class="pass_All" type="checkbox"></td>
+            <td class="phone">AirPods</td>
+            <td class="phone">1000</td>
+        </tbody>
+        <tbody id="iPad8">
+            <td><input class="pass_All" type="checkbox"></td>
+            <td class="phone">iPad8</td>
+            <td class="phone">5000</td>
+        </tbody>
+        <tbody id="iPhone4">
+            <td><input class="pass_All" type="checkbox"></td>
+            <td class="phone">iPhone4</td>
+            <td class="phone">2000</td>
+        </tbody>
+    </table>
+    <script>
+        var pass = document.getElementById ("pass");
+        var pass_All = document.getElementsByClassName ("pass_All");
+        pass.onclick = function () {
+            for (var i = 0 ; i < pass_All.length ; i ++) {
+                pass_All[i].checked = this.checked;
+            }
+        }
+            for (var i = 0 ; i < pass_All.length ; i ++) {
+                pass_All[i].onclick = function () {
+                    var flag = true;
+                    for (var i = 0 ; i < pass_All.length ; i ++) {
+                        if (!pass_All[i].checked) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                pass.checked = flag;
+            }
+        }
+        var phone = document.getElementsByClassName ("phone");
+    </script>
+</body>
+</html>

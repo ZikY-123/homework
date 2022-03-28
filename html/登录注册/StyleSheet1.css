@@ -1,0 +1,35 @@
+﻿.login_bar {
+    background-color:#f5f8fd;
+    border:5px solid #4faccb;
+    border-radius:20px;
+    width:360px;
+    height:100px;
+    position: relative;
+    left:550px;
+    top:200px;
+    text-align:center;
+    padding:15px 0px 15px 0px;
+}
+
+.admin {
+    background:url(images/1.jpg) no-repeat;
+    text-indent:1em;
+}
+
+.code {
+    background:url(images/2.jpg) no-repeat;
+    text-indent:1em;
+}
+.login {
+    position:relative;
+    right:7px;
+    bottom:9px;
+    background-color:#3bb7ea;
+}
+
+.regisiter {
+    position:relative;
+    left:57px;
+    bottom:9px;
+    background-color:#fb8c16;
+}

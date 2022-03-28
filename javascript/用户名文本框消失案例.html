@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #color {
+            color: pink;
+            border:1px solid;
+            border-color: pink;
+            outline: 0;
+        }
+        #color1 {
+            border: 1px solid;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="账户">
+    <script>
+        var a = document.querySelector ("input");  // 获取元素
+        a.onfocus = function () {
+            if (this.value === "账户") {
+                this.value = "";  // 获得焦点内容消失
+            }
+            this.id = "color";
+        }
+        a.onblur = function () {
+            if (this.value === "") {
+                this.value = "账户"; // 失去焦点内容恢复
+            }
+            this.id = "color1";
+        }
+    </script>
+</body>
+</html>

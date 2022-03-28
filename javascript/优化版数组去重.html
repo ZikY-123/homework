@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 数组去重（重点案例！）
+        // 核心算法：创建一个新数组，此时遍历需要去重的数组，然后用该数组的元素去创建的空数组里面查询是否有该元素
+        // 如果新数组里面没有该元素，则添加该元素，否则不添加
+        var oldArr = ["c" , "a" , "z" , "a" , "x" , "a" , "x" , "c" , "b"];
+        var newArr = [];
+        for (var i = 0 ; i < oldArr.length ; i ++) {
+            if (newArr.indexOf (oldArr [i]) === -1) {
+                newArr.push (oldArr [i]);
+            } else {
+
+            }
+        }
+        console.log (newArr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

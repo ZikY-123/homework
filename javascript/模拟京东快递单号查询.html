@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            width: 166px;
+            height: 70px;
+        }
+        input {
+            position: relative;
+            margin-top: 8px;
+        }
+        #con {
+            height: 40px;
+            border: 1px #000 solid;
+            font-size: 30px;
+            display: none;
+        }
+        #con::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 50px;
+            left: 18px;
+            border: 8px solid #000;
+            border-style: solid dashed dashed;
+            border-color: #999 transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div id="con"></div>
+        <input type="text" placeholder="请输入您的快递单号">
+    </div>
+    <script>
+        let con = document.getElementById ("con");
+        let inp = document.querySelector ("input");
+        inp.addEventListener ("keyup" , function () {
+            if (this.value == "") {
+                con.style.display = "none";
+            } else {
+                con.style.display = "block";
+                con.innerHTML = this.value;
+            }
+            console.log (this.value);
+            // 失去焦点盒子消失
+            inp.addEventListener ("blur" , function () {
+                con.style.display = "none";
+            })
+            inp.addEventListener ("focus" , function () {
+                if (this.value !== "") {
+                    con.style.display = "block";
+                }
+            })
+        })
+    </script>
+</body>
+</html>

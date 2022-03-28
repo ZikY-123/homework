@@ -1,0 +1,31 @@
+﻿.home {
+    width: 280px;
+    height: 190px;
+    margin: auto;
+}
+
+li {
+    background: url(images/li_bg.png) no-repeat;
+    list-style: none;
+    line-height: 40px;
+    text-align: center;
+    background-position: 5px 15px;
+}
+
+.head {
+    border: 2px solid gray;
+    background: url(images/title_bg.png) no-repeat 11px 7px;
+    width: 220px;
+    height: 30px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

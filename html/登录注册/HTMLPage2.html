@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>注册</title>
+    <link href="StyleSheet2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="main">
+        <form method="dialog">
+            <p id="head">下面就开始在线报名吧<span class="size">（以下信息是报名传智播客的重要依据，请认真填写）</span></p>
+            姓名<span class="color">*</span>
+            <input type="text" class="name" placeholder="报名的重要依据，请认真填写"/>
+            <br /><br /><!--姓名输入框-->
+            手机<span class="color">*</span>
+            <input type="tel" class="phone" placeholder="报名的重要依据，请认真填写" />
+            <br /><br /><!--手机号码输入框-->
+            性别<span class="color">*</span>
+            <label for="man"> <input type="radio" name="sex" id="man"/>男 </label>
+            <label for="woman"> <input type="radio" name="sex" id="woman"/>女 </label>
+            <br /><br /><!--单选框-->
+            邮箱<span class="color">*</span>
+            <input type="email" class="email" placeholder="请填写正确的邮箱地址" />
+            <br /><br /><!--邮箱地址-->
+            意向课程<span class="color">*</span>
+            <select class="menu">
+                <option>网页平面设计UI就业班</option>
+                <option>java基础班</option>
+                <option>java进阶班</option>
+                <option>C语言基础班</option>
+                <option selected="selected">C语言进阶班</option>
+            </select><!--下拉菜单-->
+            <br /><br />
+            了解传智渠道
+            <label for="check"> <input type="checkbox" id="check" />百度 </label>
+            <label for="check"> <input type="checkbox" id="check" />传智老学员 </label>
+            <label for="check"> <input type="checkbox" id="check" />朋友推荐 </label>
+            <label for="check"> <input type="checkbox" id="check" />CSDN网站 </label>
+            <label for="check"> <input type="checkbox" id="check" />视频教程 </label>
+            <label for="check"> <input type="checkbox" id="check" />其他 </label>
+            <!--复选框-->
+            <br /><br />
+                  <p id="name">留言</p>
+            <textarea cols="50" rows="10" placeholder="简述您有没有设计基础，以及为什么选择网页平面UI设计"></textarea>
+            <!--留言框-->
+            <br /><br />
+            <input type="submit" class="present" />
+        </form>
+    </div>
+</body>
+</html>

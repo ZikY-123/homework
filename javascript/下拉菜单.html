@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+    .tab {
+        float: left;
+        margin: 0 5px;
+    }
+    .tab a {
+        display: block;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .tab a:hover {
+        background-color: #eee;
+        color: rgb(218, 107, 17);
+    }
+    .tab ul {
+        width: 100px;
+        display: none ;
+    }
+    .tab ul li {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        border: 1px orange solid;
+    }
+    .tab ul li:hover {
+        color: darkorange;
+        background-color: rgb(242, 250, 250);
+    }
+    .li_a {
+        border: 1px #eee solid;
+    }
+</style>
+<body>
+    <ul>
+        <li class="tab">
+            <a href="#" class="li_a">微博</a>
+            <ul>
+                <li><a href="#">私信</a></li>
+                <li><a href="#">评论</a></li>
+                <li><a href="#">@我</a></li>
+            </ul>
+        </li>
+        <li class="tab">
+            <a href="#" class="li_a">博客</a>
+            <ul>
+                <li><a href="#">博客评论</a></li>
+                <li><a href="#">未读提醒</a></li>
+            </ul>
+        </li>
+        <li class="tab">
+            <a href="#" class="li_a">邮箱</a>
+            <ul>
+                <li><a href="#">免费邮箱</a></li>
+                <li><a href="#">VIP邮箱</a></li>
+                <li><a href="#">企业邮箱</a></li>
+                <li><a href="#">邮箱客户端</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        var lis = document.querySelectorAll (".tab");
+        for (var i = 0 ; i < lis.length ; i ++) {
+            lis[i].onmouseover = function () {
+                this.children[1].style.display = "block";
+            }
+            lis[i].onmouseleave = function () {
+                this.children[1].style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

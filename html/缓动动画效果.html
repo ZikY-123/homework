@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>缓动动画效果</title>
+  <style>
+    span {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 0;
+      background-color: antiquewhite;
+      top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn500">500</button>
+  <button id="btn800">800</button>
+  <span></span>
+  <script>
+    // obj：对象 target：目标位置
+    function animate(obj, target, time) {
+      clearInterval(obj.timer);
+      obj.timer = setInterval(function() {
+        // 步长值写到定时器内部
+        let step = (target - obj.offsetLeft) / 10;
+        if (obj.offsetLeft >= target) {
+          // 停止动画 本质是停止计时器
+          clearInterval(obj.timer);
+        }
+        obj.style.left = obj.offsetLeft + 1 + 'px';
+      }, time);
+    }
+    let span = document.querySelector('span');
+    let btn500 = document.querySelector('#btn500');
+    let btn800 = document.querySelector('#btn800');
+    
+    btn500.addEventListener('click', function() {
+      // 调用函数
+      animate(span, 500, 5);
+    })
+    btn800.addEventListener('click', function(){
+      animate(span, 800, 5)
+    })
+  </script>
+</body>
+</html>

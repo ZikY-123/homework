@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>浮动布局练习3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 1226px;
+      height: 615px;
+      background-color: aqua;
+      margin: 0 auto;
+    }
+    .left {
+      float: left;
+      width: 234px;
+      height: 615px;
+      background-color: antiquewhite;
+    }
+    .right {
+      width: 992px;
+      height: 615px;
+      background-color: aquamarine;
+      float: left;
+    }
+    .right>div {
+      float: left;
+      width: 234px;
+      height: 300px;
+      background-color: #ff8500;
+      margin-left: 14px;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  <div class="left"></div>
+  <div class="right">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+</body>
+</html>

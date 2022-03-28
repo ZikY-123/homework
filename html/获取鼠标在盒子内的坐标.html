@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      margin-top: 200px;
+      margin-left: 200px;
+    }
+    .inner {
+      margin-left: 200px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="inner"></div>
+  <script>
+    let box = document.querySelector('.box')
+    let inner = document.querySelector('.inner')
+    box.addEventListener('click', function (e) {
+      // console.log(e.pageX)
+      // console.log(e.pageY)
+      // console.log(box.offsetWidth)
+      // console.log(box.offsetTop)
+      inner.innerHTML = '鼠标当前坐标为  X：' + (e.pageX - box.offsetWidth) + '  Y：' + (e.pageY - box.offsetTop) 
+    })
+  </script>
+</body>
+</html>

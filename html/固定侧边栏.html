@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>固定侧边栏</title>
+  <style>
+    #head {
+      width: 1500px;
+      height: 300px;
+      background-color: aqua;
+    }
+    #banner {
+      width: 1500px;
+      height: 500px;
+      background-color: aquamarine;
+    }
+    #body {
+      width: 1500px;
+      height: 5000px;
+      background-color: darkgreen;
+    }
+    #right {
+      right: 20px;
+      text-align: center;
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 40px;
+      height: auto;
+      background-color: bisque;
+    }
+  </style>
+</head>
+<body>
+  <div id="head">头部区域</div>
+  <div id="banner">banner区域</div>
+  <div id="body">主体区域</div>
+  <div id="right">
+    <button id="right-1">返回顶部</button>
+  </div>
+  <script>
+    let head = document.querySelector('#head')  // 头部区域
+    let banner = document.querySelector('#banner')  // banner区域
+    let body = document.querySelector('#body')  // 主体区域
+    let right = document.querySelector('#right')  // 返回顶部
+    let right_1 = document.querySelector('#right-1')  // 按钮
+    window.addEventListener('scroll', function () {
+      if (this.scrollY >= head.offsetHeight) {
+        right.style.display = 'block'
+        right.style.position = 'fixed'
+        // 更改盒子显示方式及定位
+      } else {
+        right.style.display = 'none'
+        right.style.position = 'fixed'
+      }
+    })  // 控制返回顶部按钮显示
+    right_1.addEventListener('click', function () {
+      let sc = window.scrollY
+      window.scroll(0, -sc)
+    })
+  </script>
+</body>
+</html>

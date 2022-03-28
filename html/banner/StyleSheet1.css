@@ -1,0 +1,103 @@
+﻿.home {
+    position:relative;
+    left:400px;                                             /*设置主体框架*/
+}
+.bg {
+    width:755px;
+    height:286px;
+    background:url(images/pic.gif) no-repeat;               /*设置背景属性*/
+}
+.wz1 {
+    width:260px;
+    height:285px;
+    color:white;
+    background-color:#201e1f;
+    position:relative;
+    left:755px;
+    bottom:287px;
+    margin-top:1px;
+    padding-left:30px;                                       /*设置右边框架属性*/
+}
+#zw {
+    text-indent:2em;
+    padding:0px;
+    margin-top:20px;
+    font-size:15px;
+    line-height:26px;
+    width:230px;                                             /*设置右边文字属性*/
+}
+#tit1 {
+    padding:30px 0px 0px 0px;
+    font-size:18px;
+    margin:0px;                                              /*设置右边标题属性*/
+}
+.icon {
+    margin-right:5px;                                        /*设置图标属性*/
+    padding-bottom:0px;
+    margin-right:15px;
+}
+.wz2 {
+    width:300px;
+    height:235px;
+    position :relative;
+    bottom:587px;
+    left:430px;
+    padding-top:50px;                                        /*设置左边框架属性*/
+}
+.right {
+    color:white;
+    text-align:right;
+    padding:0px;
+    margin:0px;
+    font-size:18px;                                          /*设置左边文字属性*/
+}
+h2 {
+    color:white;
+    position:relative;
+    left:180px;
+    margin:0px 0px 25px 10px;
+    padding:0px;                                              /*设置左边标题属性*/
+}
+#icon5 {
+    padding-left:5px;
+    height:25px;
+    position:absolute;
+    top:5px;
+    left:98px;                                                /*设置小图标属性*/
+}
+a {
+    color:white;
+    text-decoration:none;
+    display:block;
+    height:30px;
+    width:30px;
+    background-color:#ff7101;
+    text-align:center;
+    padding-top:5px;                                           /*设置链接共同属性*/
+}
+#a1 {
+    position:relative;
+    left:115px;
+    top:30px;                                                  /*链接a1属性*/
+}
+#a2 {
+    position: relative;
+    left:165px;
+    bottom:5px;
+    background-color:white;
+    color:#ff7101;                                             /*链接a2属性*/
+}
+#a3 {
+    position:relative;
+    left:215px;
+    bottom:40px;
+    background-color:white;
+    color:#ff7101;                                             /*链接a3属性*/
+}
+#a4 {
+    position:relative;
+    left:265px;
+    bottom:75px;
+    background-color:white;
+    color:#ff7101;                                             /*链接a4属性*/
+}

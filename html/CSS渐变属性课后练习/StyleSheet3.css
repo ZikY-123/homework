@@ -1,0 +1,6 @@
+﻿div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    background-image: repeating-linear-gradient(90deg,red,yellow 10%,green 15%)
+}

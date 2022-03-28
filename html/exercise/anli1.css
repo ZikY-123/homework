@@ -1,0 +1,28 @@
+﻿.img {
+    text-align:center;
+}
+#blue {
+    color:blue;
+}
+#red {
+    color:red;
+}
+strong {
+    font-size:2em;
+    color:red;
+}
+.wz {
+    margin: 0auto;
+    width: 600px;
+    height: 200px;
+    margin-top:20px;
+    margin-left:470px;
+}
+html,body {
+    width:100%;
+    height:100%;
+}
+p {
+    text-indent:2em;
+}
+   

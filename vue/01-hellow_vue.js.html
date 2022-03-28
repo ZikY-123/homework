@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../Download/vue.js"></script>
+</head>
+<body>
+    <div id="a">
+        <p>{{name}}</p>
+        <h1>{{msg}}</h1>
+    </div>
+    <script>
+        let a = new Vue({
+            el: '#a',
+            data :{
+                name: 'hellow Vue',
+                msg: 'hellow'
+            }
+        })
+    </script>
+</body>
+</html>

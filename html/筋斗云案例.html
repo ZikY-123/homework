@@ -1,0 +1,83 @@
+<!--
+  鼠标经过某个li，筋斗云跟着鼠标到达当前li的位置
+  鼠标离开这个li，筋斗云复原为原来的位置
+  鼠标点击了这个li，筋斗云就会留在这个li的位置
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>筋斗云案例</title>
+  <style>
+    span {
+      position: absolute;
+      float: left;
+      left: 45px;
+      top: 18px;
+      width: 70px;
+      height: 20px;
+      background-color: chartreuse;
+      z-index: -1;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      float: left;
+      width: 100px;
+    }
+
+    div {
+      width: 700px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <ul id="ull">
+      <li><a href="#">首页新闻</a></li>
+      <li><a href="#">师资力量</a></li>
+      <li><a href="#">活动策划</a></li>
+      <li><a href="#">企业文化</a></li>
+      <li><a href="#">招聘信息</a></li>
+      <li><a href="#">公司简介</a></li>
+    </ul>
+    <span id="sp"></span>
+  </div>
+  <script src="./animate.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      let current = 45
+      // 1.获取元素
+      sp = document.querySelector('#sp')
+      ull = document.querySelector('#ull')
+      lis = document.querySelectorAll('li')
+      // 2.绑定事件
+      for (let i = 0; i < lis.length; i++) {
+        lis[i].addEventListener('mouseenter', function () {
+          animate(sp, this.offsetLeft - 10)
+        })
+        lis[i].addEventListener('mouseleave', function () {
+          animate(sp, current - 10)
+        })
+        lis[i].addEventListener('click', function () {
+          current = this.offsetLeft
+        })
+      }
+    })
+  </script>
+</body>
+
+</html>

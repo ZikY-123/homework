@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        list-style-type: none;
+        width: 200px;
+        height: auto;
+        padding-left: 0;
+    }
+    li {
+        text-align: center;
+        border: 1px black solid;
+    }
+</style>
+<body>
+    <ul>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+        <li>ddd</li>
+    </ul>
+    <script>
+    var list = document.querySelector("ul").querySelectorAll("li");
+    for (var i = 0 ; i < list.length ; i ++) {
+        list[i].onmousemove = function () {
+            this.style.backgroundColor = "#499af7";
+        }
+        list[i].onmouseleave = function () {
+            this.style.backgroundColor = "";
+        }
+    }
+    </script>
+</body>
+</html>
